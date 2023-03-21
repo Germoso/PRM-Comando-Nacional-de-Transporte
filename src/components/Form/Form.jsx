@@ -17,6 +17,7 @@ const Form = () => {
     const [status, setStatus] = useState(STATUS.initial)
     const [isSuccessModalOpen, setIsSuccessModalOpen] = useState(false)
     const [isErrorModalOpen, setIsErrorModalOpen] = useState(false)
+    const [errorMessage, setErrorMessage] = useState("")
 
     const handleChange = (e) => {
         setData({ ...data, [e.target.name]: e.target.value })
@@ -113,6 +114,7 @@ const Form = () => {
                                             setData(userScheme)
                                         })
                                         .catch((e) => {
+                                            setErrorMessage(e)
                                             setStatus(STATUS.error)
                                             setIsErrorModalOpen(true)
                                         })
@@ -124,7 +126,12 @@ const Form = () => {
                     </Grid>
                 </Grid.Container>
             </form>
-            <FormModal close={() => setIsErrorModalOpen(false)} isOpen={isErrorModalOpen} type={"Error"} />
+            <FormModal
+                close={() => setIsErrorModalOpen(false)}
+                isOpen={isErrorModalOpen}
+                type={"Error"}
+                errorMessage={errorMessage}
+            />
             <FormModal close={() => setIsSuccessModalOpen(false)} isOpen={isSuccessModalOpen} type={"Success"} />
         </>
     )
