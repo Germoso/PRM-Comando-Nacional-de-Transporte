@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { userScheme } from "@/firebase/userScheme"
 import { create } from "@/firebase/client"
-import { Button, Col, Container, Grid, Input, Loading, Modal, Row, Text } from "@nextui-org/react"
+import { Button, Grid, Input, Loading, Row } from "@nextui-org/react"
 import Head from "next/head"
 import FormModal from "./FormModal"
 
@@ -12,16 +12,12 @@ const STATUS = {
     error: Symbol("error"),
 }
 
-const index = () => {
+const Form = () => {
     const [data, setData] = useState(userScheme)
     const [status, setStatus] = useState(STATUS.initial)
     const [isSuccessModalOpen, setIsSuccessModalOpen] = useState(false)
     const [isErrorModalOpen, setIsErrorModalOpen] = useState(false)
 
-    /**
-     * Set the input data to the data state
-     * @param {Event} e onChange event
-     */
     const handleChange = (e) => {
         setData({ ...data, [e.target.name]: e.target.value })
     }
@@ -134,4 +130,4 @@ const index = () => {
     )
 }
 
-export default index
+export default Form
