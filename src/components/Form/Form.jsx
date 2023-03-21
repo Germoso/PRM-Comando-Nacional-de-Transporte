@@ -38,7 +38,7 @@ const Form = () => {
                         <Input
                             placeholder="Nombre"
                             clearable
-                            helperText="Por favor ingresa tu nombre"
+                            helperText="Registra tu nombre"
                             value={data.nombre}
                             onChange={(e) => handleChange(e)}
                             name="nombre"
@@ -49,7 +49,7 @@ const Form = () => {
                         <Input
                             placeholder="Apellido"
                             clearable
-                            helperText="Por favor ingresa tu apellido"
+                            helperText="Registra tu apellido"
                             value={data.apellido}
                             onChange={(e) => handleChange(e)}
                             name="apellido"
@@ -60,7 +60,7 @@ const Form = () => {
                         <Input
                             placeholder="Domicilio"
                             clearable
-                            helperText="Por favor ingresa tu Domicilio"
+                            helperText="Registra tu Domicilio"
                             value={data.domicilio}
                             onChange={(e) => handleChange(e)}
                             name="domicilio"
@@ -71,7 +71,7 @@ const Form = () => {
                         <Input
                             placeholder="Telefono"
                             clearable
-                            helperText="Por favor ingresa tu telefono"
+                            helperText="Registra tu telefono"
                             value={data.telefono}
                             onChange={(e) => handleChange(e)}
                             name="telefono"
@@ -82,7 +82,7 @@ const Form = () => {
                         <Input
                             placeholder="Colegio Electoral"
                             clearable
-                            helperText="Ingresa el nombre de tu colegio electoral"
+                            helperText="Nombre de tu colegio electoral"
                             value={data.colegioElectoral}
                             onChange={(e) => handleChange(e)}
                             name="colegioElectoral"
