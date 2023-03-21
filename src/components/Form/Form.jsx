@@ -93,7 +93,7 @@ const Form = () => {
                         <Input
                             placeholder="Ubicacion Colegio Electoral"
                             clearable
-                            helperText="Ingresa la ubicacion de tu colegio electoral"
+                            helperText="Ubicacion de tu colegio electoral"
                             value={data.ubicacionColegioElectoral}
                             onChange={(e) => handleChange(e)}
                             name="ubicacionColegioElectoral"
