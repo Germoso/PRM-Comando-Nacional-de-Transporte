@@ -19,6 +19,14 @@ const app = initializeApp(firebaseConfig)
 const firestore = getFirestore(app)
 
 const create = (data) => {
+    for (let prop in data) {
+        if (!data[prop]) {
+            return new Promise((resolve, reject) => {
+                reject("Datos incompletos")
+            })
+        }
+    }
+
     return addDoc(collection(firestore, "usuarios"), data)
 }
 

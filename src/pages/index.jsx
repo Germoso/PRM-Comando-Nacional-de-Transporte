@@ -10,9 +10,9 @@ const Index = () => {
             {/* <NavigationBar /> */}
             <Container>
                 <Grid.Container justify={"center"}>
-                    <Grid md={6} css={{ height: "fit-content", marginTop: "$20" }}>
+                    <Grid md={6} css={{ height: "fit-content", marginTop: "$20", marginBottom: "$20" }}>
                         <Card variant="shadow">
-                            <Text h2 css={{ marginTop: "$10", textAlign: "center" }}>
+                            <Text h3 css={{ marginTop: "$10", textAlign: "center" }}>
                                 Comando Transporte Nacional
                             </Text>
                             <Form />
