@@ -13,10 +13,10 @@ const Index = () => {
                     <Grid md={6} css={{ height: "fit-content", marginTop: "$20", marginBottom: "$20" }}>
                         <Card variant="shadow">
                             <Text size={"$2xl"} h1 css={{ marginTop: "$10", textAlign: "center" }}>
-                                Comando nacional de transporte PRM
+                                Comando Nacional de Transporte PRM
                             </Text>
                             <Text h4 css={{ textAlign: "center" }}>
-                                Registro nacional de militantes
+                                Registro Nacional de militantes
                             </Text>
                             <Form />
                         </Card>
