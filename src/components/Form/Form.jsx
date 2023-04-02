@@ -58,6 +58,17 @@ const Form = () => {
                     </Grid>
                     <Grid md={6} xs={12}>
                         <Input
+                            placeholder="Cedula"
+                            clearable
+                            helperText="Registra tu numero de cedula"
+                            value={data.cedula}
+                            onChange={(e) => handleChange(e)}
+                            name="cedula"
+                            width="100%"
+                        />
+                    </Grid>
+                    <Grid md={6} xs={12}>
+                        <Input
                             placeholder="Domicilio"
                             clearable
                             helperText="Registra tu Domicilio"
@@ -100,6 +111,7 @@ const Form = () => {
                             width="100%"
                         />
                     </Grid>
+
                     <Grid xs={12} css={{ marginBottom: "$10" }}>
                         <Row justify="center">
                             <Button
@@ -109,11 +121,15 @@ const Form = () => {
                                     setStatus(STATUS.loading)
                                     create(data)
                                         .then(() => {
+                                            console.log("CREADO")
                                             setStatus(STATUS.success)
                                             setIsSuccessModalOpen(true)
                                             setData(userScheme)
                                         })
                                         .catch((e) => {
+                                            console.log("NO CREADO")
+                                            console.log(e)
+
                                             setErrorMessage(e)
                                             setStatus(STATUS.error)
                                             setIsErrorModalOpen(true)

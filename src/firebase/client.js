@@ -2,7 +2,6 @@ import "firebase/app"
 import "firebase/auth"
 
 import { initializeApp } from "firebase/app"
-import { getAnalytics } from "firebase/analytics"
 import { addDoc, collection, getFirestore } from "firebase/firestore"
 
 const firebaseConfig = {

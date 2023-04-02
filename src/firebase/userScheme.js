@@ -5,4 +5,5 @@ export const userScheme = {
     domicilio: "",
     telefono: "",
     ubicacionColegioElectoral: "",
+    cedula: "",
 }
