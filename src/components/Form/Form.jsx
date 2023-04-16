@@ -38,7 +38,7 @@ const Form = () => {
                         <Input
                             placeholder="Nombre"
                             clearable
-                            helperText="Registra tu nombre"
+                            helperText="Nombre"
                             value={data.nombre}
                             onChange={(e) => handleChange(e)}
                             name="nombre"
@@ -49,7 +49,7 @@ const Form = () => {
                         <Input
                             placeholder="Apellido"
                             clearable
-                            helperText="Registra tu apellido"
+                            helperText="Apellido"
                             value={data.apellido}
                             onChange={(e) => handleChange(e)}
                             name="apellido"
@@ -60,7 +60,7 @@ const Form = () => {
                         <Input
                             placeholder="Cedula"
                             clearable
-                            helperText="Registra tu numero de cedula"
+                            helperText="Numero de cedula"
                             value={data.cedula}
                             onChange={(e) => handleChange(e)}
                             name="cedula"
@@ -71,7 +71,7 @@ const Form = () => {
                         <Input
                             placeholder="Domicilio"
                             clearable
-                            helperText="Registra tu Domicilio"
+                            helperText="Domicilio"
                             value={data.domicilio}
                             onChange={(e) => handleChange(e)}
                             name="domicilio"
@@ -82,7 +82,7 @@ const Form = () => {
                         <Input
                             placeholder="Telefono"
                             clearable
-                            helperText="Registra tu telefono"
+                            helperText="Telefono"
                             value={data.telefono}
                             onChange={(e) => handleChange(e)}
                             name="telefono"
